@@ -1,7 +1,7 @@
 LAMP7Vagrant
 ============
 
-This project is based on the work by @mattanderson on <http://github.com/mattanderson/vagrant-lamp>
+This project is based on the work by mattanderson on <http://github.com/mattanderson/vagrant-lamp>
 
 Requirements
 ------------
@@ -18,7 +18,7 @@ Usage
 	$ vagrant up
 
 You will also want to add the following line to your hosts file:
-	192.168.62.57 "Yourhostname"
+	`192.168.62.57 YourHostName`
 
 That is pretty simple.
 
