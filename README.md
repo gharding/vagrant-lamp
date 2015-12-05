@@ -1,15 +1,7 @@
-Vagrant LAMP
+LAMP7Vagrant
 ============
 
-Want to test a new web app but don't want to affect your current Apache / MySQL / PHP system?
-Applications like MAMP are great, but they don't make it easy to maintain multiple, separate
-web roots.
-
-If you find yourself needing quick to configure web stack, but also one that is customizable try this Vagrant project
-
-Vagrant allows for Virtual Machines to be quickly setup, and easy to use.
-
-And this project aims to make it very easy to spinup a complete LAMP stack in a matter of minutes.
+This project is based on the work by @mattanderson on <http://github.com/mattanderson/vagrant-lamp>
 
 Requirements
 ------------
@@ -21,16 +13,19 @@ Usage
 -----
 
 ### Startup
-	$ git clone http://www.github.com/mattandersen/vagrant-lamp
+	$ git clone https://bitbucket.org/flailingsledgehammer/lamp7vagrant
 	$ cd vagrant-lamp
 	$ vagrant up
+
+You will also want to add the following line to your hosts file:
+	192.168.62.57 "Yourhostname"
 
 That is pretty simple.
 
 ### Connecting
 
 #### Apache
-The Apache server is available at <http://localhost:8888>
+The Apache server will be available by entering whatever you named your host in your hosts file or by going to <http://localhost:8888>
 
 #### MySQL
 Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.
@@ -41,7 +36,7 @@ Technical Details
 -----------------
 * Ubuntu 14.04 64-bit
 * Apache 2
-* PHP 5.5
+* PHP 7.1.0
 * MySQL 5.5
 
 We are using the base Ubuntu 14.04 box from Vagrant. If you don't already have it downloaded
@@ -49,6 +44,8 @@ the Vagrantfile has been configured to do it for you. This only has to be done o
 for each account on your host computer.
 
 The web root is located in the project directory at `src/` and you can install your files there
+
+Within the Vagrant environment, all files will be present in `/vagrant/src`
 
 And like any other vagrant file you have SSH access with
 
