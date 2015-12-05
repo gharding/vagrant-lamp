@@ -13,7 +13,7 @@ Usage
 -----
 
 ### Startup
-	$ git clone https://bitbucket.org/flailingsledgehammer/lamp7vagrant
+	$ git clone https://github.com/gharding/vagrant-lamp.git 
 	$ cd vagrant-lamp
 	$ vagrant up
 
