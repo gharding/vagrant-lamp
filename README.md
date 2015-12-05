@@ -1,7 +1,7 @@
 LAMP7Vagrant
 ============
 
-This project is based on the work by mattandersen on <http://github.com/mattandersen/vagrant-lamp>
+This project is forked from the work by mattandersen on <http://github.com/mattandersen/vagrant-lamp>
 
 Requirements
 ------------
