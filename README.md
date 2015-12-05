@@ -19,7 +19,6 @@ Usage
 
 You will also want to add the following line to your hosts file:
 	`192.168.62.57 YourHostName`
-
 That is pretty simple.
 
 ### Connecting
