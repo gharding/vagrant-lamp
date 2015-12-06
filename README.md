@@ -24,7 +24,10 @@ That is pretty simple.
 ### Connecting
 
 #### Apache
-The Apache server will be available by entering whatever you named your host in your hosts file or by going to <http://localhost:8888>
+The Apache server will be available by entering whatever you named your host in your hosts file into your browser (e.g. if you entered YourHostName as per the example, you'd type this into the URL bar of your browser to access your project.) or by going to <http://localhost:8888>. By default this will point to src/index.php which simply contains the phpinfo function, so you should see a page detailing all of the available modules and configurations of PHP 7 in the vagrant box.
+
+#### Composer
+Composer will install in the Vagrant box by default, allowing you to start using PHP package management immediately.
 
 #### MySQL
 Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.

@@ -29,6 +29,7 @@ EOD
 	apache_go
 	php_go
 	mysql_go
+	composer_go
 
 	touch /var/lock/vagrant-provision
 }
@@ -112,6 +113,11 @@ mysql_go() {
 
 	service mysql restart
 	update-rc.d apache2 enable
+}
+
+composer_go() {
+	# Install Composer
+	curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 }
 
 main
