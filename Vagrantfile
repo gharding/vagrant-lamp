@@ -26,4 +26,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Sync the src folder to the correct place
   config.vm.synced_folder '.', '/vagrant'
+  config.vm.synced_folder './src', '/vagrant/src'
 end
